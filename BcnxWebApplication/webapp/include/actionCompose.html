@@ -1,0 +1,151 @@
+<div id="printCom" class="printCom"></div>
+<div id="msgCom"></div>
+<div id="loaded"  class="panel panel-info">
+    <div class="col-xs-12 text-right" style="padding-top: 5px;">
+        <button style="display: none" title="Print" id="btPrintCom" class='btset btn btn-default'><span class="glyphicon glyphicon-print" aria-hidden="true"></span></button>
+    </div>
+    <div class="panel-body setGradientDown" id="settlePanel">
+        <div id="sendRequest">
+            <input type="hidden" id="rqMti">
+            <input type="hidden" id="rqCard">
+            <input type="hidden" id="rqRrn">
+            <input type="hidden" id="rqStan">
+            <input type="hidden" class="orgFee" id="rqFee">
+            <input type="hidden" id="rqAcq">
+            <input type="hidden" id="rqSlot">
+            <input type="hidden" id="rqProc">
+            <input type="hidden" id="rqRemark">
+            <input type="hidden" id="rqAmount">
+            <input type="hidden" id="rqIss">
+            <input type="hidden" id="rqUserId">
+        </div>
+        <table class='txn-custom txn-custom-zebra1 txn-custom-horizontal1 txnw-custom-highlight1'>
+            <tr>
+                <td class='text-right'>Card:</td><td class="sCard empty"></td>
+                <td class='text-right'>Location:</td><td class="sLocation empty"></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Reference:</td><td class="sRrn empty"></td>
+                <td class='text-right'>Terminal Id:</td><td class="sTermId empty"></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Proc:</td><td class="sProc empty"></td>
+                <td class='text-right'>Issuer:</td><td class="sIss empty"></td>
+            </tr>
+            <tr class='cut-out'>
+                <td class='sAmount text-right text-bold'>Amount: </td><td><input type='text' class='dynamicAmount' disabled="disabled" /> <input type="checkbox" title="Set amount" name="passel" id="part"></td>
+                <td class='text-right'>Acquirer:</td><td class="sAcq empty"></td>
+            </tr>
+            <tr class='cut-out'>
+                <td class='sFee text-right click-disable'>Fee:</td><td><input type='text' class='dynamicFee' disabled="disabled"/></td>
+                <td class='text-right'>Currency:</td><td class="sCurr empty"></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Response:</td><td class="sRes empty"></td>
+                <td class='text-right'>Date:</td><td class="sDate empty"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class='text-right popBox copyRequest'>Reason Code:</td>
+                <td class="popBox copyRequest">
+                    <select name="cp" id="reasonCode" >
+                        <option value="0">--</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class='text-right popBox copyRequest'>Remark:</td>
+                <td class="popBox copyRequest">
+                    <input type="text" name="setRemark" id="setRemark" />
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div id="action" class="action">
+            <select name='action' class='act selectpicker' id='act'>
+                <option value="0">Action</option>
+                <option value='500001'>Copy Request</option>
+                <option value='600001'>Charge back</option>
+                <option value='700001'>Adjustment</option>
+            </select>
+            <button title="Save action" id="btsave" class='btset btn btn-primary'>Save</button>
+
+        </div>
+    </div>
+    <div id="tabCompose" class="setGradientUp">
+        <ul>
+            <li><a href="#composeDetails" title="Transaction detail">Detail</a></li>
+            <li><a id="clickRelated" href="#Related" title="Transaction related">Related</a></li>
+        </ul>
+        <div id="composeDetails" class="dataGrid">
+            <table class='txn-custom txn-custom-zebra1 txn-custom-horizontal1 txnw-custom-highlight1'>
+
+                <tr>
+                    <td class='text-right'>Date:</td><td class="dDate"></td>
+                    <td class='text-right'>Location:</td><td class="dLocation"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Time:</td><td class="dTime"></td>
+                    <td class='text-right'>Terminal Id:</td><td class="dTermId"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>MTI:</td><td class="dMti"></td>
+                    <td class='text-right'>Country</td><td class="dCountry"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Card:</td><td class="dCard"></td>
+                    <td class='text-right'>Currency:</td><td class="dCurr"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Reference: </td><td class="dRrn"></td>
+                    <td class='text-right'>EXP:</td><td class="dExp"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Proc:</td><td class="dProc"></td>
+                    <td class='text-right'>appr:</td><td class="dAppr"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Amount:</td><td class="dAmt"></td>
+                    <td class='text-right'>Pos:</td><td class="dPos"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Fee:</td><td class="dFee"></td>
+                    <td class='text-right'>CondCode:</td><td class="dConCode"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Response:</td><td class="dRes"></td>
+                    <td class='text-right'>Acquirer:</td><td class="dAcq"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Slot:</td><td class="dSlot"></td>
+                    <td class='text-right'>Isuuer:</td><td class="dIss"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Stan:</td><td class="dStan"></td>
+                    <td class='text-right'>Type:</td><td class="dTp"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Mcc:</td><td class="dMcc"></td>
+                    <td class='text-right'>Remark:</td><td class="dRemark"></td>
+                </tr>
+
+            </table>
+        </div>
+        <div id="Related">
+            <div id="dataGrid" class="dataGrid">
+                <table id='listRelated'><tr><td></td></tr></table>
+                <div id='pagerRelated'></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../custom/js/action/actionCompose.js"></script>
+
+
+
+
+
+

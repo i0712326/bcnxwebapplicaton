@@ -1,0 +1,63 @@
+<div class="panel panel-default">
+    <div class="panel panel-heading">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="title-panel">Incoming</div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body" id="frmSearch">
+        <div class="col-md-12 col-settle setGradientDown">
+            <div class="optionSearch">
+                <div class="form-inline col-lg-4">
+                    <div class="form-group">
+                        <label for="sCardIn">CARD: </label>
+                        <input type="text" id="sCardIn" class="form-control scard" value="%" size="21">
+                        <button id="searchIncoming" class="btn btn-default" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="sRrnIn">RRN: </label>
+                        <input type="text" id="sRrnIn" class="form-control srrn" value="%" size="8">
+                    </div>
+                    <div class="form-group">
+                        <label for="sStanIn">STAN: </label>
+                        <input type="text" name="stan" id="sStanIn" class="form-control sstan"  value="%" size="8"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="sProcIn">PROC: </label>
+                        <select name='action' id="sProcIn" class='act form-control' id='act' style="width: 100px;">
+                             <option value="">%</option>
+                            <option title="500001" value='500001'>500001</option>
+                            <option title="500002" value='500002'>500002</option>
+                            <option title="600001" value='600001'>600001</option>
+                            <option title="700001" value='700001'>700001</option>
+                            <option title="800001" value='800001'>800001</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="sdate">START: </label>
+                        <input type="text" size="8" name="sdate" id="sdate" class="form-control ssdate" placeholder=" Get date" /> <label for="sdate">END: </label>  <input type="text" size="8" name="edate" id="edate" class="form-control sedate" placeholder=" Get date" />
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div id="gridIncoming" class="gridIncoming col-md-12">
+                <table id='listIncoming'><tr><td></td></tr></table>
+                <div id='pagerIncoming'></div>
+            </div>
+            <div id="dialogIncoming"></div>
+        </div>
+    </div>
+</div>
+<script src="../custom/js/txn/incoming.js"></script>
+
+
+
+
+
+
+

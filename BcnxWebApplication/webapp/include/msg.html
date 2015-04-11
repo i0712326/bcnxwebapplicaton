@@ -1,0 +1,20 @@
+<script>
+    $(document).ready(function(){
+        var showCode =localStorage.code;
+        var showMsg =localStorage.msg;
+        $('.showMsg').empty();
+        if(showCode){
+            if(showCode=="200"){
+                $('.showMsg').addClass('alert-success');
+                $('.showMsg').append(showMsg);
+            }
+            else{
+                $('.showMsg').addClass('alert-danger');
+                $('.showMsg').append("Warning code "+showCode+" "+showMsg+" !!");
+            }
+        }
+    });
+</script>
+<div id="showMsg" class="showMsg ui-corner-all alert" role="alert"></div>
+
+

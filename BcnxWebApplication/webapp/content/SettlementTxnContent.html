@@ -1,0 +1,189 @@
+<div class="panel panel-default">
+    <div class="panel panel-heading">
+        <div class="row stl">
+            <div class="col-xs-3">
+                <div class="title-panel">Settlement</div>
+            </div>
+            <div class="col-xs-9 text-right">
+                <div class="input-group custom-search-form col-lg-offset-10 small" >
+                    <input type="text" id="stlDate" class="stlDate form-control txt-set-search" size="10">
+                    <span class="input-group-btn">
+                        <button id="searchSet" class="btn btn-default" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="col-md-12 col-settle setGradientDown">
+            <div class="col-md-10">
+                <div class="row stl-search" style="text-align: right">
+
+                </div>
+            </div>
+            <div class="col-md-10">
+                <table class="stl-custom" style="font-size: 12px;" border="0">
+                    <caption style="text-align: left; padding-left: 50px"><h5>NON-FINANCIAL TRANSACTION SUMMARY:</h5></caption>
+                    <thead>
+                    <tr>
+                        <th class="text-right">Type</th>
+                        <th class="text-right">Number</th>
+                        <th class="text-right">Amount</th>
+                        <th class="text-right">Fee</th>
+                        <th class="text-right">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>REVERSAL</td>
+                        <td class="revNum text-right empty"></td>
+                        <td class="revAmt text-right empty"></td>
+                        <td class="revFee text-right empty"></td>
+                        <td class="revTot text-right empty"></td>
+                    </tr>
+                    <tr>
+                        <td>ERROR</td>
+                        <td class="errNum text-right empty"></td>
+                        <td class="errAmt text-right empty"></td>
+                        <td class="errFee text-right empty"></td>
+                        <td class="errTot text-right empty"></td>
+                    </tr>
+                    <tr>
+                        <td>COPY REQUEST (OUT)</td>
+                        <td class="outCprNum text-right empty"></td>
+                        <td class="outCprAmt text-right empty"></td>
+                        <td class="outCprFee text-right empty"></td>
+                        <td class="outCprTot text-right empty"></td>
+                    </tr>
+                    <tr>
+                        <td>COPY REQUEST RESPONSE (OUT)</td>
+                        <td class="outCrrNum text-right empty"></td>
+                        <td class="outCrrAmt text-right empty"></td>
+                        <td class="outCrrFee text-right empty"></td>
+                        <td class="outCrrTot text-right empty"></td>
+                    </tr>
+                    <tr>
+                        <td>COPY REQUEST (IN)</td>
+                        <td class="inCprNum text-right empty"></td>
+                        <td class="inCprAmt text-right empty"></td>
+                        <td class="inCprFee text-right empty"></td>
+                        <td class="inCprTot text-right empty"></td>
+                    </tr>
+                    <tr>
+                        <td>COPY REQUEST RESPONSE (IN)</td>
+                        <td class="inCrrNum text-right empty"></td>
+                        <td class="inCrrAmt text-right empty"></td>
+                        <td class="inCrrFee text-right empty"></td>
+                        <td class="inCrrTot text-right empty"></td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-10">
+                <table class="stl-custom" style="font-size: 12px;" border="0">
+                    <caption style="text-align: left; padding-left: 80px"><h5>FINANCIAL TRANSACTION SUMMARY:</h5></caption>
+                    <thead>
+                    <tr>
+                        <th class="text-right">Type</th>
+                        <th class="text-right">Number</th>
+                        <th class="text-right">Amount</th>
+                        <th class="text-right">Fee</th>
+                        <th class="text-right">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>ISSUER</td>
+                        <td class="issNum text-right empty"></td>
+                        <td class="issAmt text-right empty"></td>
+                        <td class="issFee text-right empty"></td>
+                        <td class="issTot text-right empty"></td>
+                    </tr>
+                    <tr>
+                        <td>CHARGE BACK (OUT)</td>
+                        <td class="outChbNum text-right empty"></td>
+                        <td class="outChbAmt text-right empty"></td>
+                        <td class="outChbFee text-right empty"></td>
+                        <td class="outChbTot text-right empty"></td>
+                    </tr>
+                    <tr>
+                        <td>ADJUSTMENT (IN)</td>
+                        <td class="inAdjNum text-right empty"></td>
+                        <td class="inAdjAmt text-right empty"></td>
+                        <td class="inAdjFee text-right empty"></td>
+                        <td class="inAdjTot text-right empty"></td>
+                    </tr>
+                    <tr>
+                        <td>REPRESENTMENT (IN)</td>
+                        <td class="inRpmNum text-right empty"></td>
+                        <td class="inRpmAmt text-right empty"></td>
+                        <td class="inRpmFee text-right empty"></td>
+                        <td class="inRpmTot text-right empty"></td>
+                    </tr>
+                    <tr>
+                        <td>ACQUIRER</td>
+                        <td class="acqNum text-right empty"></td>
+                        <td class="acqAmt text-right empty"></td>
+                        <td class="acqFee text-right empty"></td>
+                        <td class="acqTot text-right empty"></td>
+                    </tr>
+                    <tr>
+                        <td>CHARGE BACK (IN)</td>
+                        <td class="inChbNum text-right empty"></td>
+                        <td class="inChbAmt text-right empty"></td>
+                        <td class="inChbFee text-right empty"></td>
+                        <td class="inChbTot text-right empty"></td>
+                    </tr>
+                    <tr>
+                        <td>ADJUSTMENT (OUT)</td>
+                        <td class="outAdjNum text-right empty"></td>
+                        <td class="outAdjAmt text-right empty"></td>
+                        <td class="outAdjFee text-right empty"></td>
+                        <td class="outAdjTot text-right empty"></td>
+                    </tr>
+                    <tr>
+                        <td>REPRESENTMENT (OUT)</td>
+                        <td class="outRpmNum text-right empty"></td>
+                        <td class="outRpmAmt text-right empty"></td>
+                        <td class="outRpmFee text-right empty"></td>
+                        <td class="outRpmTot text-right empty"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <div class="col-xs-3 text-right net-title">
+                    <h4 class="h4-net-settlement">Net Settlement:</h4>
+                </div>
+                <div class="col-xs-3 text-left net-amount">
+                    <h4 class="h4-net-settlement"><span class="total-net-settlement empty"></span></h4>
+                </div>
+
+                <br>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="attach-text footer-text col-xs-6 text-right">
+                    <p><span class="setFile"></i></span><span class="recFile"></span><input type="hidden" class="fileDate"></p>
+                </div>
+                <div class="footer-text col-xs-6 text-right">
+                    <p class="Timer1"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../custom/js/txn/settlement.js"></script>
+
+
+
+
+
+
+
+

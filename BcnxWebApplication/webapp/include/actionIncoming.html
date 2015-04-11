@@ -1,0 +1,141 @@
+<div id="printIn" class="printIn" style="display:none !important;"></div>
+<div id="msgIncoming"></div>
+<div id="message"></div>
+<div id="loaded"  class="panel panel-info">
+    <div class="panel-body setGradientDown" id="settlePanel">
+        <div class="col-xs-12 text-right">
+            <button title="Print" id="btPrintIncoming" class='btset btn btn-default'><span class="glyphicon glyphicon-print" aria-hidden="true"></span></button>
+        </div>
+        <form id ="resIncoming" method="post" enctype="multipart/form-data">
+            <input type="hidden" id ="resRrn" name="rrn">
+            <input type="hidden" id ="resSlot" name="slot">
+            <input type="hidden" id ="resStan" name="stan">
+            <input type="hidden" id ="resPart" name="part" value="N">
+            <input type="hidden" id ="resMti" name="mti">
+            <input type="hidden" id ="resUsr" name="usrId">
+            <table class='txn-custom txn-custom-zebra1 txn-custom-horizontal1 txnw-custom-highlight1'>
+                <tr>
+                    <td class='text-right'>Action:</td><td class="iAct"></td>
+                    <td class='text-right'>Location:</td><td class="iLocation"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Reason:</td><td class="iReason"></td>
+                    <td class='text-right'>Terminal Id:</td><td class="iTermId"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Remark:</td><td class="iRemark"></td>
+                    <td class='text-right'>Issuer:</td><td class="iIss"></td>
+                </tr>
+                <tr class='cut-out'>
+                    <td class='text-right text-bold'>Amount: </td><td class="iAmt"><input type="hidden" class="noAmtPart" name="amount" disabled="disabled"><input type="text" class="amtPt" name="amount" disabled="disabled"> <input type="checkbox" title="Set amount" name="passel" id="rePart"></td>
+                    <td class='text-right'>Acquirer:</td><td class="iAcq"></td> 
+                </tr>
+                <tr class='cut-out'>
+                    <td class='text-right click-disable'>Fee: </td><td class="iFee"><input type="hidden" class="noFeePart" name="fee" disabled="disabled"><input type="text" class="feePt" name="fee" disabled="disabled"></td>
+                    <td class='text-right'>Status:</td><td class="iStatus"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Currency:</td><td class="iCurr"></td>
+                    <td class='text-right popBox copyRequest'>Response Code:</td>
+                    <td class="popBox copyRequest">
+                        <select name="rea" id="reasonCodeIn" >
+                            <option value="0">--</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Date:</td><td class="iDate"></td>
+                    <td class='text-right popBox copyRequest'>Attach file:</td>
+                    <td class="popBox copyRequest">
+                       <input type="file" name="file" id="resFile" style="padding: 0px; border:none;">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="text-right">File:</td>
+                    <td class="dFile"></td>
+                </tr>
+            </table>
+            <div id="resAction" class="col-xs-12 text-right">
+                <select name='procc' class='act selectpicker' id='resAct'></select>
+                <input type="submit" title="Save action" id="btResSave" class='btset btn btn-primary' value="Submit">
+            </div>
+
+        </form>
+
+    </div>
+    <div id="tabIncoming" class="setGradientUp">
+        <ul>
+            <li><a href="#incomingDetails" title="Transaction detail">Details</a></li>
+
+        </ul>
+        <div id="incomingDetails" class="dataGrid">
+            <table class='txn-custom-incoming txn-custom-zebra1 txn-custom-horizontal1 txnw-custom-highlight1'>
+                <tr>
+                    <td class='text-right'>Date:</td><td class="tDate"></td>
+                    <td class='text-right'>Location:</td><td class="tLocation"></td>
+                    <td class='text-right'>Member:</td><td class="tMember"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Time:</td><td class="tTime"></td>
+                    <td class='text-right'>Terminal Id:</td><td class="tTermId"></td>
+                    <td class='text-right'>Email:</td><td class="tEmail"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>MTI:</td><td class="tMti"></td>
+                    <td class='text-right'>Country</td><td class="tCountry"></td>
+                    <td class='text-right'>Entry:</td><td class="tEntry"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Card:</td><td class="tCard"></td>
+                    <td class='text-right'>Currency:</td><td class="tCurr"></td>
+                    <td class='text-right'>Tel:</td><td class="tTel"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Reference: </td><td class="tRrn"></td>
+                    <td class='text-right'>EXP:</td><td class="tExp"></td>
+                    <td class='text-right'>Fax:</td><td class="tFax"></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Proc:</td><td class="tProc"></td>
+                    <td class='text-right'>appr:</td><td class="tAppr"></td>
+                    <td></td><td></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Amount:</td><td class="tAmt"></td>
+                    <td class='text-right'>Pos:</td><td class="tPos"></td>
+                    <td></td><td></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Fee:</td><td class="tFee"></td>
+                    <td class='text-right'>CondCode:</td><td class="tCondCode"></td>
+                    <td></td><td></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Response:</td><td class="tRes" ></td>
+                    <td class='text-right'>Acquirer:</td><td class="tAcq"></td>
+                    <td></td><td></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Slot:</td><td class="tSlot"></td>
+                    <td class='text-right'>Isuuer:</td><td class="tIss"></td>
+                    <td></td><td></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Stan:</td><td class="tStan"></td>
+                    <td class='text-right'>Type:</td><td class="tTp"></td>
+                    <td></td><td></td>
+                </tr>
+                <tr>
+                    <td class='text-right'>Mcc:</td><td class="tMcc"></td>
+                    <td class='text-right'>Card Type:</td><td class="tCtp"></td>
+                    <td></td><td></td>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+</div>
+<script src="../custom/js/action/actionIncoming.js"></script>

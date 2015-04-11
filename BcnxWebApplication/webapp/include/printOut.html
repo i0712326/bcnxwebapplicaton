@@ -1,0 +1,177 @@
+<style>
+    .myPrint{
+        margin: 50px 0px 50px 50px;
+
+    }
+    .myPrint h3, .myPrint h4{
+        text-decoration: underline;
+    }
+    .myPrint table{
+        font-size: 12px;
+    }
+    .myPrint .text-bold{
+        font-weight: bold;
+    }
+    .myPrint .text-center{
+        text-align: center;
+    }
+    .myPrint .text-left{
+        text-align: left;
+    }
+    .myPrint .text-right{
+        text-align: right;
+        font-weight: bold;
+        padding-right: 5px;
+    }
+    .myPrint .outPrint{
+        width: 100%;
+    }
+</style>
+<div class="myPrint">
+    <h3>#Outgoing Transaction: </h3>
+    <p class="pDate">Print date: </p>
+    <h4>Transaction action</h4>
+    <table class="outPrint" border="0">
+        <tbody>
+        <tr>
+            <td class="text-right">Action: </td>
+            <td class="text-left aProc"></td>
+            <td class="text-right">Amount: </td>
+            <td class="text-left aAmount"></td>
+        </tr>
+        <tr>
+            <td class="text-right">Reason: </td>
+            <td class="text-left aRea"></td>
+            <td class="text-right">Fee: </td>
+            <td class="text-left aFee"></td>
+        </tr>
+        <tr>
+            <td class="text-right">Remark: </td>
+            <td class="text-left aRemark"></td>
+            <td class="text-right">Date: </td>
+            <td class="text-left aDate"></td>
+        </tr>
+        <tr>
+            <td class="text-right"></td>
+            <td class="text-left"></td>
+            <td class="text-right">Status: </td>
+            <td class="text-left aStatus"></td>
+        </tr>
+
+        </tbody>
+
+    </table>
+    <h4>Transaction detail: </h4>
+    <table class='outPrint'>
+        <tr>
+            <td class='text-right'>Date:</td>
+            <td class="pdDate"></td>
+            <td class='text-right'>Location:</td>
+            <td class="pdLoc"></td>
+        </tr>
+        <tr>
+            <td class='text-right'>Time:</td>
+            <td class="pdTime"></td>
+            <td class='text-right'>Terminal:</td>
+            <td class="pdTrmId"></td>
+        </tr>
+        <tr>
+            <td class='text-right'>MTI:</td>
+            <td class="pdMti"></td>
+            <td class='text-right'>Country</td>
+            <td class="pdCountry"></td>
+        </tr>
+        <tr>
+            <td class='text-right'>Card:</td>
+            <td class="pdCard"></td>
+            <td class='text-right'>Currency:</td>
+            <td class="pdCurr"></td>
+        </tr>
+        <tr>
+            <td class='text-right'>Reference: </td>
+            <td class="pdRrn"></td>
+            <td class='text-right'>EXP:</td>
+            <td class="pdExp"></td>
+        </tr>
+        <tr>
+            <td class='text-right'>Proc:</td>
+            <td class="pdProc"></td>
+            <td class='text-right'>appr:</td>
+            <td class="pdAppr"></td>
+        </tr>
+        <tr>
+            <td class='text-right'>Amount:</td>
+            <td class="pdAmt"></td>
+            <td class='text-right'>Pos:</td>
+            <td class="pdPos"></td>
+        </tr>
+        <tr>
+            <td class='text-right'>Fee:</td>
+            <td class="pdFee"></td>
+            <td class='text-right'>CondCode:</td>
+            <td class="pdConCode"></td>
+        </tr>
+        <tr>
+            <td class='text-right'>Response:</td>
+            <td class="pdRes"></td>
+            <td class='text-right'>Acquirer:</td>
+            <td class="pdAcq"></td>
+        </tr>
+        <tr>
+            <td class='text-right'>Slot:</td>
+            <td class="pdSlot"></td>
+            <td class='text-right'>Isuuer:</td>
+            <td class="pdIss"></td>
+        </tr>
+        <tr>
+            <td class='text-right'>Stan:</td>
+            <td class="pdStan"></td>
+            <td class='text-right'>Type:</td>
+            <td class="pdType"></td>
+        </tr>
+        <tr>
+            <td class='text-right'>Mcc:</td>
+            <td class="pdMcc"></td>
+            <td class='text-right'>Card Type:</td>
+            <td class="pdCardType"></td>
+        </tr>
+
+    </table>
+    <h4>Member: </h4>
+    <table class="outPrint1" border="0">
+        <tbody>
+        <tr>
+            <td class="text-right">Member:</td>
+            <td class="text-left mMember"></td>
+        </tr>
+        <tr>
+            <td class="text-right">Email:</td>
+            <td class="text-left mEmail"></td>
+        </tr>
+        <tr>
+            <td class="text-right">Entry:</td>
+            <td class="text-left mEntry"></td>
+        </tr>
+        <tr>
+            <td class="text-right">Tel:</td>
+            <td class="text-left mTel"></td>
+        </tr>
+        <tr>
+            <td class="text-right">Fax:</td>
+            <td class="text-left mFax"></td>
+        </tr>
+
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <table class="outPrint">
+        <tbody>
+        <tr>
+            <td class="text-center text-bold">Creator</td>
+            <td class="text-center text-bold">Authorizer</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="../custom/js/print/printOut.js"></script>

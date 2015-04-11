@@ -1,0 +1,54 @@
+<div class="panel panel-default">
+    <div class="panel panel-heading">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="title-panel">Compose</div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body" id="frmSearch">
+        <div class="col-md-12 col-settle setGradientDown">
+            <div class="optionSearch">
+                <div class="form-inline col-lg-4">
+                    <div class="form-group">
+                        <label for="sCardIn">CARD: </label>
+                        <input type="text" id="sCardIn" class="form-control ccard" value="%" size="21">
+
+                        <button id="searchCompose" class="btn btn-default" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="sRrnIn">RRN: </label>
+                        <input type="text" id="sRrnIn" class="form-control crrn" value="%" size="8">
+                    </div>
+                    <div class="form-group">
+                        <label for="sStanIn">STAN: </label>
+                        <input type="text" name="stan" id="sStanIn" class="form-control cstan"  value="%" size="8"/>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="sdate">START: </label>
+                        <input type="text" size="8" name="sdate" id="sdate" class="form-control csdate" placeholder=" Get date" /> <label for="sdate">END: </label>  <input type="text" size="8" name="edate" id="edate" class="form-control cedate" placeholder=" Get date" />
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div id="dataGrid" class="dataGrid col-lg-12">
+                <table id='composeTxn'><tr><td></td></tr></table>
+                <div id='composePager'></div>
+            </div>
+            <div id="dialogCompose"></div>
+        </div>
+    </div>
+</div>
+<script src="../custom/js/txn/compose.js"></script>
+
+
+
+
+
+
+
+

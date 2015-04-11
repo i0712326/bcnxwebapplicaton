@@ -1,0 +1,126 @@
+<div id="printOut" class="printOut" style="display:none !important;"></div>
+<div id="loaded"  class="panel panel-info">
+<div class="panel-body setGradientDown" id="settlePanel">
+
+        <div class="col-xs-12 text-right">
+            <button title="Print" id="btPrintOutgoing" class='btset btn btn-default'><span class="glyphicon glyphicon-print" aria-hidden="true"></span></button>
+        </div>
+
+
+    <form id ="resIncoming" enctype="multipart/form-data">
+
+        <table class='txn-custom txn-custom-zebra1 txn-custom-horizontal1 txnw-custom-highlight1'>
+
+            <tr>
+                <td class='text-right'>Action:</td><td class="act"></td>
+                <td class='text-right'>Location:</td><td class="loc"></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Reason:</td><td class="rea"></td>
+                <td class='text-right'>Terminal Id:</td><td class="trmId"></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Remark:</td><td class="remark"></td>
+                <td class='text-right'>Issuer:</td><td class="iss"></td>
+            </tr>
+            <tr class='cut-out'>
+                <td class='text-right text-bold'>Amount: </td><td class="amt"></td>
+                <td class='text-right'>Acquirer:</td><td class="acq"></td>
+            </tr>
+            <tr class='cut-out'>
+                <td class='text-right click-disable'>Fee:</td><td class="fee"></td>
+                <td class='text-right'>Status:</td><td class="status"></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Currency:</td><td class="curr"></td>
+                <td class='text-right popBox copyRequest'></td>
+                <td class="popBox copyRequest">
+                </td>
+
+            </tr>
+            <tr>
+                <td class='text-right'>Date:</td><td class="date"></td>
+                <td class='text-right popBox copyRequest'></td>
+                <td class="popBox copyRequest">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+    <br>
+
+</div>
+<div id="outgoingTab" class="setGradientUp">
+    <ul>
+        <li><a href="#outgoingDetails" title="Transaction detail">Details</a></li>
+
+    </ul>
+    <div id="outgoingDetails" class="dataGrid">
+        <table class='txn-custom txn-custom-zebra1 txn-custom-horizontal1 txnw-custom-highlight1'>
+            <tr>
+                <td class='text-right'>Date:</td><td class="orgDate"></td>
+                <td class='text-right'>Location:</td><td class="orgLoc"></td>
+                <td class='text-right'>Member:</td><td class="orcMem"></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Time:</td><td class="orgTime"></td>
+                <td class='text-right'>Terminal Id:</td><td class="orgTrmId"></td>
+                <td class='text-right'>Email:</td><td class="orgEmail"></td>
+            </tr>
+            <tr>
+                <td class='text-right'>MTI:</td><td class="orgMti"></td>
+                <td class='text-right'>Country</td><td class="orgCountry"></td>
+                <td class='text-right'>entry:</td><td class="orgEntry"></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Card:</td><td class="orgCard"></td>
+                <td class='text-right'>Currency:</td><td class="orgCurr"></td>
+                <td class='text-right'>Tel:</td><td class="orgTel"></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Reference: </td><td class="orgRrn"></td>
+                <td class='text-right'>EXP:</td><td class="orgExp"></td>
+                <td class='text-right'>Fax:</td><td class="orgFax"></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Proc:</td><td class="orgProc"></td>
+                <td class='text-right'>appr:</td><td class="orgAppr"></td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Amount:</td><td class="orgAmt"></td>
+                <td class='text-right'>Pos:</td><td class="orgPos"></td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Fee:</td><td class="orgFee"></td>
+                <td class='text-right'>CondCode:</td><td class="orgConCode"></td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Response:</td><td class="orgRes"></td>
+                <td class='text-right'>Acquirer:</td><td class="orgAcq"></td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Slot:</td><td class="orgSlot"></td>
+                <td class='text-right'>Isuuer:</td><td class="orgIss"></td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Stan:</td><td class="orgStan"></td>
+                <td class='text-right'>Type:</td><td class="orgType"></td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td class='text-right'>Mcc:</td><td class="orgMcc"></td>
+                <td class='text-right'>Card Type:</td><td class="orgCardType"></td>
+                <td></td><td></td>
+            </tr>
+
+        </table>
+    </div>
+
+</div>
+</div>
+<script src="../custom/js/action/actionOutgoing.js"></script>

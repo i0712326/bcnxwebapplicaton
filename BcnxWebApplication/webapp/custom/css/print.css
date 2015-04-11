@@ -1,0 +1,9 @@
+.outPrint{
+    width: 80%;
+}
+.outPrint td:nth-child(1){
+     width: 50%;
+ }
+.outPrint td:nth-child(2){
+    width: 50%;
+}
